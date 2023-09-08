@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <style src="js/script.js"></style>
+    <script src="js/script.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>PORTFOLIO</title>
 </head>
@@ -13,9 +13,9 @@
 <body>
     <!-- header design -->
     <header class="header">
-        <a href="#" class="logo">PORTFOLIO. </a>
+        <a href="#" class="logo">PORTFOLIO.<span class="animate" style="--i:1;"></span></a>
 
-        <div class="bx bx-menu" id="menu-icon"></div>
+        <div class="bx bx-menu" id="menu-icon"><span class="animate" style="--i:2;"></span></div>
 
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
@@ -23,12 +23,15 @@
             <a href="#education">Education</a>
             <a href="#skills">Skills</a>
             <a href="#contact">Contact</a>
+
+            <span class="active_nav"></span>
+            <span class="animate" style="--i:2;"></span>
         </nav>
     </header>
 
     <!-- Home section design -->
 
-    <section class="home" id="home">
+    <section class="home show-animate" id="home">
         <div class="home-content">
             <h1>Hi, I'm <span>Sankhya Patra</span></h1>
             <div class="text-animate">
@@ -58,7 +61,7 @@
         <h2 class="heading">About <span>Me</span></h2>
 
         <div class="about-img">
-            <img src="images/home2.png" alt="">
+            <img src="images/Picture2.jpg" alt="">
             <span class="circle-spin"></span>
         </div>
 
