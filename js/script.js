@@ -22,6 +22,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
             if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
                 currentSection = id;
+                section.classList.add('show-animate');
+            } else {
+                section.classList.remove('show-animate');
             }
         });
 
@@ -35,8 +38,8 @@ document.addEventListener('DOMContentLoaded', function () {
         let header = document.querySelector('header');
         header.classList.toggle('sticky', window.scrollY > 100);
 
-        // remove toogle items and navbar on scroll
-        menuIcon.classList.remove('bx-x');
-        navbar.classList.remove('active');
+        // ANIMATE FOOTER ON SCROLL
+        let footer = document.querySelector('footer');
+        footer.classList.toggle('show-animate', window.innerHeight + window.scrollY >= document.documentElement.scrollHeight);
     });
 });
